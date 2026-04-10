@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Hub</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+body {
+    background-image: url("https://plus.unsplash.com/premium_photo-1710961232986-36cead00da3c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bW92aWVzfGVufDB8fDB8fHww");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Optional: dark overlay for readability */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    min-height: 100vh;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card img {
+    transition: transform 0.3s ease;
+}
+
+/* Card lift */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Image zoom */
+.card:hover img {
+    transform: scale(1.1);
+}
+</style>
+
+</head>
+<body>
+
+<!-- Header -->
+<header class="bg-dark text-white text-center p-4">
+    <h1>Movie Hub</h1>
+</header>
+
+<!-- Navbar -->
+<nav class="bg-light text-center p-3">
+    <a href="#" class="me-3">Home</a>
+    <a href="#" class="me-3">New Releases</a>
+    <a href="#">Watchlist</a>
+</nav>
+
+<div class="container my-4">
+    <form class="d-flex justify-content-center">
+        <input class="form-control w-50 me-2" type="search" placeholder="Search movies...">
+        <button class="btn btn-danger" type="submit">Search</button>
+    </form>
+</div>
+
+<!-- Main Content -->
+<div class="container my-5">
+    <h2 class="mb-4 text-center">What to Watch</h2>
+
+    <div class="row g-4">
+
+        <!-- Movie 1 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow bg-dark text-white">
+                <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/1GvBhRxY6MELDfxFrete6BNhBB5.jpg" class="card-img-top" alt="Kraven">
+                <div class="card-body">
+                    <h5 class="card-title">Kraven The Hunter</h5>
+                    <p class="card-text"><p>Overview: Kraven's complex relationship with his ruthless father starts him down a path of vengeance, motivating him to become not only the greatest hunter in the world, but also one of its most feared.</p>Year: 2024<br>2hr 7min</p>
+                    <button class="btn btn-danger watchlist-btn">
+             Add to Watchlist
+        </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie 2 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow bg-dark text-white">
+                <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/MvYpKlpFukTivnlBhizGbkAe3v.jpg" class="card-img-top" alt="Oceans 8">
+                <div class="card-body">
+                    <h5 class="card-title">Ocean's 8</h5>
+                    <p class="card-text"><p>Overview: After serving her prison sentence, Debbie Ocean, the younger sister of Danny Ocean, assembles a team of seven skilled women in an attempt to steal a diamond necklace worth USD 150 million.</p>Year: 2018<br>1hr 50min</p>
+                    <button class="btn btn-danger watchlist-btn">
+             Add to Watchlist
+        </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie 3 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow bg-dark text-white">
+                <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg" class="card-img-top" alt="Endgame">
+                <div class="card-body">
+                    <h5 class="card-title">Avengers: Endgame</h5>
+                    <p class="card-text"><p>Overview: After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance.</p>Year: 2019<br>3hr 1min</p>
+                    <button class="btn btn-danger watchlist-btn">
+             Add to Watchlist
+        </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie 4 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow bg-dark text-white">
+                <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/mpgkRPH1GNkMCgdPk2OMyHzAks7.jpg" class="card-img-top" alt="Texas Chainsaw">
+                <div class="card-body">
+                    <h5 class="card-title">Texas Chainsaw Massacre</h5>
+                    <p class="card-text"><p>Overview: Sally, Franklin and their three friends run out of gas while driving to their grandfather's house. One by one they are tormented and killed by a chainsaw-wielding killer and his psychopathic family.</p>Year: 1974<br>1hr 23min</p>
+                    <button class="btn btn-danger watchlist-btn">
+             Add to Watchlist
+        </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie 5 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow bg-dark text-white">
+                <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/7qop80YfuO0BwJa1uXk1DXUUEwv.jpg" class="card-img-top" alt="Bad Guys">
+                <div class="card-body">
+                    <h5 class="card-title">The Bad Guys</h5>
+                    <p class="card-text"><p>Overview: After a lifetime of legendary heists, notorious criminals Mr. Wolf, Mr. Snake, Mr. Piranha, Mr. Shark and Ms. Tarantula are finally caught. To avoid a prison sentence, the animal outlaws must pull off their most challenging con yet -- becoming model citizens. Under the tutelage of their mentor, Professor Marmalade, the dubious gang sets out to fool the world that they're turning good.</p>Year: 2022<br>1hr 40min</p>
+                    <button class="btn btn-danger watchlist-btn">
+             Add to Watchlist
+        </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie 6 -->
+        <div class="col-md-4">
+            <div class="card h-100 shadow bg-dark text-white">
+                <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/jexoNYnPd6vVrmygwF6QZmWPFdu.jpg" class="card-img-top" alt="Spiderman">
+                <div class="card-body">
+                    <h5 class="card-title">The Amazing Spiderman</h5>
+                    <p class="card-text"><p>Overview: Peter Parker, an outcast high school student, gets bitten by a radioactive spider and attains superpowers. While unravelling his parents' disappearance, he must fight against the Lizard.</p>Year: 2012<br>2hr 16min</p>
+                    <button class="btn btn-danger watchlist-btn">
+             Add to Watchlist
+        </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3">
+    <p>Movie Hub 2026 All rights reserved</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
