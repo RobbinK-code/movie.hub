@@ -1,0 +1,71 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Watchlist</title>
+
+    <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+     <!-- Small custom style (to control only 1 primary colour + 2 secondary colours) -->
+      <style>
+        :root {
+            --primary: blue
+            --secondary: dark gray
+            --secondary: black
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            border: none;
+        }
+        .bg-secondary1{
+            background-color: var(--secondary1);
+        }
+        .bg-secondary2{
+            background-color: var(--secondary2);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(10px); }
+            to {opacity: 1; transform: translateY(0); }
+        }
+
+        .movie-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-right: 10px;
+        }
+      </style>
+</head>
+
+
+<body class="bg-dark text-light">
+
+    <div class="container py-5">
+        <h1 class="text-center mb-4">Movie Watchlist</h1>
+
+        <!-- input -->
+    <div class ="input-group mb-3">
+        <input type="text" id="movieinput" class="form-control" placeholder="Enter movie name">
+        <button class="btn btn-primary" id="addBtn">Add</button>
+        <button class="btn btn-success" id="randomBtn">Random</button>
+    </div>
+
+    <!-- List -->
+     <ul id="movielist" class="list-group"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
